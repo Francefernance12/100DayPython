@@ -10,7 +10,7 @@ Day 2
 Day 3
 
 
-Day 4
+Day 4 
 This is a simple game of rock, paper and scissors against the computer. 
 Brief summary of my codes:
 1. first thing first, I imported random to allow the computer to make randomly choose 3 choices.
