@@ -1,7 +1,7 @@
 # 100DayPython
 Every day until the 100th day, I will be uploading 1 different project.
  
-Day 1
+ Day 1
  This is a straightforward generator designed to generate a unique band name. You'll respond to a series of questions, and your answers will amalgamate into a distinctive band name for you.
  
   Brief summary of my codes:
@@ -10,7 +10,7 @@ Day 1
 3. I print the name of the band by combining city and pets_name using concatenation.
  Optional: I could've used an F string if I wanted to instead of concatenation.
 
-Day 2
+ Day 2
  I've developed a tip calculator that not only computes the total bill amount with the tip included but also facilitates the calculation of individual shares for a bill split among multiple people. It's a convenient tool for simplifying the process when dining out with friends.
  
  Brief summary of my codes:
@@ -24,7 +24,7 @@ Day 2
 8. I updated the code, I added an if statement to display only the total amount if 1 person payed but if more than one person payed, it will display the amount of perople paying and the amount they each have to pay.
  
  
-Day 3
+ Day 3
  This game is an adventure where players advance through the storyline by typing in their actions.
  
   Brief summary of my codes:
@@ -37,7 +37,7 @@ Day 3
 
  
  
-Day 4 
+ Day 4 
 This is a simple game of rock, paper and scissors against the computer. 
  Brief summary of my codes:
 1. To introduce randomness into Python's selection process, I imported the 'random' module.
@@ -49,9 +49,9 @@ This is a simple game of rock, paper and scissors against the computer.
 7. Win conditions were incorporated to ascertain the victor.
 8. The program concludes by revealing the winner of the game.
  
-challenges
+ challenges
  I experienced some difficulties during this project.
 - At a certain juncture, when I selected scissors and the computer also chose scissors, Python consistently indicated that the computer had won. Upon investigation, I discovered that in the code block defining the computer's win condition, I had inadvertently utilized the player_choice variable instead of the correct computer_choice variable within the elif statement.
 - While examining the player's win condition code block, I sought to understand why my intentional choice of rock was consistently registering as scissors. It became evident that the issue stemmed from the data type of the player_choice variable, which was initially a string. The problem arose when I attempted to equate this string variable to an integer within my if conditions. Recognizing the incompatibility, I resolved the issue by converting the integer to a string, resulting in the desired functionality.
  
-Day 5
+ Day 5
