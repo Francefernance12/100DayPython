@@ -3,14 +3,17 @@ Every day until the 100th day, I will be uploading 1 different project.
  
 Day 1
  This is a straightforward generator designed to generate a unique band name. You'll respond to a series of questions, and your answers will amalgamate into a distinctive band name for you.
+ 
   Brief summary of my codes:
 1. Welcome the User using print().
 2. I create 2 inputs inside a variable named city and pets_name to get answers of the questions from the User
 3. I print the name of the band by combining city and pets_name using concatenation.
  Optional: I could've used an F string if I wanted to instead of concatenation.
+
 Day 2
  I've developed a tip calculator that not only computes the total bill amount with the tip included but also facilitates the calculation of individual shares for a bill split among multiple people. It's a convenient tool for simplifying the process when dining out with friends.
- 	Brief summary of my codes:
+ 
+ Brief summary of my codes:
 1. Welcome the User using print
 2. Defined the bill, tip% and the number of people spliting the bill
 3. calculate the tip percentage by dividing the tip to 100
@@ -21,8 +24,17 @@ Day 2
 8. I updated the code, I added an if statement to display only the total amount if 1 person payed but if more than one person payed, it will display the amount of perople paying and the amount they each have to pay.
  
  
- 
 Day 3
+ This game is an adventure where players advance through the storyline by typing in their actions.
+ 
+  Brief summary of my codes:
+   1. I incorporated an element of fun by integrating ASCII art.
+   2. The initial player choice was defined through an input prompt.
+   3. Subsequently, I established an if statement to guide Python in responding to the player's initial choice. Depending on the player's selection, the code directs the player through various story progressions or leads them to a game over screen.
+   4. Within these initial if statements, I introduced another layer of choice for the player.
+   5. To further diversify the narrative, nested if statements were implemented to handle the third and final choice, creating a branching storyline based on the player's decisions.
+   6. Finally, if the player choose the right door at their last choice, they would win!
+
  
  
 Day 4 
