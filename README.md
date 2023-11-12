@@ -1,30 +1,45 @@
 # 100DayPython
 Every day until the 100th day, I will be uploading 1 different project.
-
+ 
 Day 1
-
-
+ This is a straightforward generator designed to generate a unique band name. You'll respond to a series of questions, and your answers will amalgamate into a distinctive band name for you.
+  Brief summary of my codes:
+1. Welcome the User using print().
+2. I create 2 inputs inside a variable named city and pets_name to get answers of the questions from the User
+3. I print the name of the band by combining city and pets_name using concatenation.
+ Optional: I could've used an F string if I wanted to instead of concatenation.
 Day 2
-
-
+ I've developed a tip calculator that not only computes the total bill amount with the tip included but also facilitates the calculation of individual shares for a bill split among multiple people. It's a convenient tool for simplifying the process when dining out with friends.
+ 	Brief summary of my codes:
+1. Welcome the User using print
+2. Defined the bill, tip% and the number of people spliting the bill
+3. calculate the tip percentage by dividing the tip to 100
+4. I would then calculate the bill with the tip percentage to calculate how much tip must be payed
+5. I would define the total amount by adding the bill + the tip amount then I rounded the number by 2 by 2 decimal points
+6. after that I defined the split amount to calculate how much each person must pay for the total bill
+7. Finally I added the print statement to display the total amount of the bill plus tip.
+8. I updated the code, I added an if statement to display only the total amount if 1 person payed but if more than one person payed, it will display the amount of perople paying and the amount they each have to pay.
+ 
+ 
+ 
 Day 3
-
-
+ 
+ 
 Day 4 
 This is a simple game of rock, paper and scissors against the computer. 
-Brief summary of my codes:
-1. first thing first, I imported random to allow the computer to make randomly choose 3 choices.
-2. I created a list of choices. [Rock, Paper, and Scissors]
-3. I counted the number of choices in the list using len(). Used -1 for the count to start at 0.
-4. Allowed the computer to choose 3 random number from the counted number.
-5. I created an input for the player to choose rock, paper or scissor 
-6. I made sets of if conditions for the player and computer to let python know what have they chose. I Added some cool ASCII art in the mean time
-7. Finally, I added the win conditions to figure out who won
-8. Program ends with who won the game.
-
+ Brief summary of my codes:
+1. To introduce randomness into Python's selection process, I imported the 'random' module.
+2. I established a list encompassing the choices: Rock, Paper, and Scissors.
+3. Utilizing the 'len()' function, I determined the number of choices in the list, starting the count at 0 by subtracting 1.
+4. The computer was granted the ability to make selections by generating three random numbers within the count.
+5. I implemented an input mechanism for players to choose between rock, paper, or scissors.
+6. Sets of if conditions were crafted for both the player and computer choices, incorporating engaging ASCII art for visual appeal.
+7. Win conditions were incorporated to ascertain the victor.
+8. The program concludes by revealing the winner of the game.
+ 
 challenges
-I experienced some difficulties during this project.
-- At one point, when I chose scissors and the computer also picked scissors, python kept on saying that the computer had won. I went back to find out the problem. I found out that in the computer win condition code block, within the `elif` statement, I mistakenly used player_choice variable instead of computer_choice variable.
-- Within the player's win condition code block, I was trying to figure out why I kept choosing scissors when I intentionally chose rock. I found out that my player_choice variable input is a string data type so when I added in my if conditions, I was setting my player_choice is equal to a integer. A string data cannot be equal to a integer so I converted the integer into a string then it went well.
-
+ I experienced some difficulties during this project.
+- At a certain juncture, when I selected scissors and the computer also chose scissors, Python consistently indicated that the computer had won. Upon investigation, I discovered that in the code block defining the computer's win condition, I had inadvertently utilized the player_choice variable instead of the correct computer_choice variable within the elif statement.
+- While examining the player's win condition code block, I sought to understand why my intentional choice of rock was consistently registering as scissors. It became evident that the issue stemmed from the data type of the player_choice variable, which was initially a string. The problem arose when I attempted to equate this string variable to an integer within my if conditions. Recognizing the incompatibility, I resolved the issue by converting the integer to a string, resulting in the desired functionality.
+ 
 Day 5
