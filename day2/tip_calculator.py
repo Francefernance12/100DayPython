@@ -13,7 +13,8 @@ total_amount = round(bill + tip_amount, 2)
 split_amount = round(total_amount / split, 2)
 
 print(f"\nTotal bill amount: ${total_amount}")
-print(f"{split} people is paying ${split_amount} each.")
+if split > 1:
+    print(f"{split} people is paying ${split_amount} each.")
 
 
 
