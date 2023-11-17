@@ -60,3 +60,16 @@ This is a simple game of rock, paper and scissors against the computer.
 - While examining the player's win condition code block, I sought to understand why my intentional choice of rock was consistently registering as scissors. It became evident that the issue stemmed from the data type of the player_choice variable, which was initially a string. The problem arose when I attempted to equate this string variable to an integer within my if conditions. Recognizing the incompatibility, I resolved the issue by converting the integer to a string, resulting in the desired functionality.
  
  Day 5
+
+  This project is a random password generator. It will take your inputs which are number of characters you want to put in your password. There are 3 different characters; letters, numbers, and symbols. After taking all the inputs. python will create the password for you.
+ 
+ Brief summary of my codes:
+  - I create 3 lists of different types of characters
+  - I take in the User's input. I convert the input into an integer
+  - defined the password. convert the password as a string
+  - created 3 for loops for each list to randomize and choose the characters
+  - I turn the password into a list then shuffle the password
+  - I reveal the User's new password.
+
+ Challenges
+ - I had a problem with shuffling the password. 
