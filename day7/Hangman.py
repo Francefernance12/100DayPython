@@ -3,9 +3,11 @@ from Hangman_words import word_list
 from Hangman_art import logo
 from Hangman_art import stages
 
+# random words and length of the randomized word.
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
+# number of lives.
 end_of_game = False
 lives = 6
 

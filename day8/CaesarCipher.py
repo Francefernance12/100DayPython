@@ -5,6 +5,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
             'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
+# caesar cipher. This will shift each letter in the message by the shift amount.
 def caesar(start_text, shift_amount, cipher_direction):
     end_text = ""
     if cipher_direction == "decode":
@@ -20,8 +21,10 @@ def caesar(start_text, shift_amount, cipher_direction):
     print(f"Here's the {cipher_direction}ed result: {end_text}")
 
 
+# caesar cipher art
 print(logo)
 
+# This loop will run until the user types 'no'
 in_game = True
 while in_game:
     # inputs
