@@ -83,7 +83,7 @@ If the Player guesses the word wrong, the player loses a life.
 If the Player guesses the letter correctly, the letter will fill in the blanks until all the blanks have been filled and the word is fully revealed.
 
 Brief summary of my codes:
- - 
+ - The first
 
 
 <h3>Day 8</h3>
