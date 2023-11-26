@@ -1,5 +1,5 @@
 # 100DayPython
-<h3>Every day until the 100th day, I will be uploading 1 different project.</h3>
+<h3>until the 100th day, I will be uploading 1 different project.</h3>
  
 <h3>Day 1</h3>
  
@@ -101,3 +101,7 @@ Brief summary of my codes:
  - Printed the ASCII art logo for the project. The ASCII art logo is from another python file I created that contains the ASCII art.
 
 <h3>Day 9</h3>
+Blind Auction
+
+<h3>Day 10</h3>
+Calculator

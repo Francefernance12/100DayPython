@@ -17,7 +17,7 @@ def attempt():
     while True:
         guessing_number = int(input("guess the number: "))
         guess_count += 1
-        #attempts
+        # attempts
         if guessing_number == target_number:
             print("congrats! you win!")
             break

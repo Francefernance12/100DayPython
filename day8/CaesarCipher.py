@@ -8,13 +8,13 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 # caesar cipher. This will shift each letter in the message by the shift amount.
 def caesar(start_text, shift_amount, cipher_direction):
     end_text = ""
-    if cipher_direction == "decode":
-        shift_amount *= -1
+    if cipher_direction == "decode":  # decryption or shift backward or left.
+        shift_amount *= -1   # e.g 3 * -1 = -3
     for char in start_text:
         if char in alphabet:
-            position = alphabet.index(char)
-            new_position = position + shift_amount
-            end_text += alphabet[new_position]
+            position = alphabet.index(char)  # finds each letter from start_text inside the alphabet
+            new_position = position + shift_amount  # shifts the letter to right
+            end_text += alphabet[new_position]  # adds the new shifted letters
         else:
             end_text += char
 
@@ -28,15 +28,15 @@ print(logo)
 in_game = True
 while in_game:
     # inputs
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
-    shift = shift % 26
+    shift = shift % 26  # in case, the shift amount is over the limit of the alphabet list
 
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
 
-    # let user restart the game
+    # lets user restart the game
     restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.")
     if restart == "no":
         in_game = False
