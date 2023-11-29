@@ -8,15 +8,30 @@ def calculate_score(cards):
     return score
 
 
+# game over
 def game_over():
     retry = input("Do you want to retry? Type 'y' or 'n': ").lower()
     if retry == "y":
         blackjack()
     else:
         print("Thanks for playing!")
+        print("""
+        ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼
+        ███▀▀▀██┼███▀▀▀███┼███▀█▄█▀███┼██▀▀▀
+        ██┼┼┼┼██┼██┼┼┼┼┼██┼██┼┼┼█┼┼┼██┼██┼┼┼
+        ██┼┼┼▄▄▄┼██▄▄▄▄▄██┼██┼┼┼▀┼┼┼██┼██▀▀▀
+        ██┼┼┼┼██┼██┼┼┼┼┼██┼██┼┼┼┼┼┼┼██┼██┼┼┼
+        ███▄▄▄██┼██┼┼┼┼┼██┼██┼┼┼┼┼┼┼██┼██▄▄▄
+        ┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼┼
+        ███▀▀▀███┼▀███┼┼██▀┼██▀▀▀┼██▀▀▀▀██▄┼
+        ██┼┼┼┼┼██┼┼┼██┼┼██┼┼██┼┼┼┼██┼┼┼┼┼██┼
+        ██┼┼┼┼┼██┼┼┼██┼┼██┼┼██▀▀▀┼██▄▄▄▄▄▀▀┼
+        ██┼┼┼┼┼██┼┼┼██┼┼█▀┼┼██┼┼┼┼██┼┼┼┼┼██┼
+        ███▄▄▄███┼┼┼─▀█▀┼┼─┼██▄▄▄┼██┼┼┼┼┼██▄""")
         sys.exit()
 
 
+# adds new card
 def hit():
     cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
     new_card = cards[randint(0, len(cards) - 1)]
@@ -24,10 +39,10 @@ def hit():
     return new_card
 
 
-def winners(player_score, computer_score):
-    # chooses winner
-    print(f"Player score is, {player_score}")
-    print(f"Computer score is, {computer_score}")
+# chooses winner
+def winners(player_score, computer_score, player_cards, computer_cards):
+    print(f"Player score is, {player_score} and cards, {player_cards}")
+    print(f"Computer score is, {computer_score} and cards, {computer_cards}")
     if player_score > computer_score:
         print("Player wins!")
         game_over()
@@ -38,7 +53,7 @@ def winners(player_score, computer_score):
         blackjack_draw = input("WOW! Two BlackJack! Do you want to push? Type 'y' or 'n': ")
         if blackjack_draw == "y":
             print("Push!")
-            push(player_score, computer_score)
+            push(player_score, computer_score, player_cards, computer_cards)
         else:
             print("it's a draw!")
             game_over()
@@ -47,32 +62,37 @@ def winners(player_score, computer_score):
         game_over()
 
 
-def push(player_score, computer_score):
+def push(player_score, computer_score, player_cards, computer_cards):
     print("You and the computer have decided pushed.")
     # player_score
     new_player_card = hit()
-    player_score += new_player_card
-    print(f"Your new score is, {player_score}")
+    player_cards.append(new_player_card)
+    new_player_score = calculate_score(player_cards)
+    player_score += new_player_score
+    print(f"Your new score is: {player_score} and player cards: {player_cards}")
 
     # new computer score
     new_computer_card = hit()
-    computer_score += new_computer_card
-    print(f"Computer new score is, {computer_score}")
+    computer_cards.append(new_computer_card)
+    new_computer_score = calculate_score(computer_cards)
+    computer_score += new_computer_score
+    print(f"Computer new score is: {computer_score}. And computer card: {computer_cards}")
 
     # decides winner again
     if player_score == computer_score:
         retry = input("You both somehow looped back to the same score! Want to keep trying? type 'y' or 'n': ").lower()
         if retry == "y":
-            push(player_score, computer_score)
+            push(player_score, computer_score, player_cards, computer_cards)
         elif retry == "n":
             game_over()
     else:
-        winners(player_score, computer_score)
+        input("push enter to see winner")
+        winners(player_score, computer_score, player_cards, computer_cards)
 
 
 def blackjack():
-    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
-
+    cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]   # cards: ace, 2-10, joker, queen, king
+    # start
     start = input("Do you want to play a game of Blackjack? Type 'y' or 'n': ").lower()
     if start == 'y':
         print(logo)
@@ -93,10 +113,8 @@ def blackjack():
 
         bust = False
         while not bust:
-            # will player choose to draw another card or not
             hit_pass = input("type 'hit' for another card or 'pass': ").lower()
-            # if player hits, it will add another card to player list
-            if hit_pass == "hit":
+            if hit_pass == "hit":      # "hit", will add another card to player list
                 new_card = hit()
                 player_cards.append(new_card)
                 player_score = calculate_score(player_cards)
@@ -105,6 +123,12 @@ def blackjack():
                 if player_score > 21:
                     print(f"Busted! You went over 21! Your score: {player_score}. Computer Won!")
                     game_over()
+                elif player_score > 21 and 11 in player_cards:
+                    player_cards.remove(11)
+                    player_cards.append(1)
+                    player_score = calculate_score(player_cards)
+
+                    print(f" Ace saved you! Player's current score: {player_score}")
             elif hit_pass == "pass":    # pass
                 bust = True
         # after the player is done drawing cards, it will add the computer cards
@@ -115,8 +139,13 @@ def blackjack():
                 computer_cards.append(new_computer_card)
                 computer_score = calculate_score(computer_cards)
                 if computer_score > 21:
-                    print(f"Busted! Computer Lost! Player won! Computer score {computer_score} and cards {computer_cards}.")
+                    print(f"Busted! Computer Lost! Computer score: {computer_score}. cards: {computer_cards}.")
+                    print(f"Player won! Player score: {player_score}. cards: {player_cards}")
                     game_over()
+                elif computer_score > 21 and 11 in computer_cards:
+                    computer_cards.remove(11)
+                    computer_cards.append(1)
+                    computer_score = calculate_score(computer_cards)
                 elif computer_cards == 11 and computer_cards == 10:
                     computer_score = 21
                     print(f"Computer has blackJack!")
@@ -124,7 +153,7 @@ def blackjack():
             else:
                 break
 
-        winners(player_score, computer_score)
+        winners(player_score, computer_score, player_cards, computer_cards)
     # player chooses pass
     else:
         print("Goodbye!")
