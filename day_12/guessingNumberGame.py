@@ -32,7 +32,7 @@ def guessing_number_game():
         print(f"your guess attempts {guess_count} out of {guess_limit}")
         # attempts
         if guessing_number == target_number:
-            print("congrats! you win!")
+            print(f"congrats! you win! The answer is {target_number}")
             print(winner)
             break
         elif guess_count >= guess_limit:
