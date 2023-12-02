@@ -108,3 +108,14 @@ Calculator
 
 <h3>Day 11</h3>
 BlackJack Game
+
+<h3>Day 12</h3>
+Guessing Number Game
+
+<h3>Day 13</h3>
+
+<h3>Day 14</h3>
+Higher Lower
+
+<h3>Day 15</h3>
+Coffee Machine
