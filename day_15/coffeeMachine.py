@@ -2,6 +2,7 @@ import sys
 from coffeeData import MENU, resources
 
 
+# report
 def report(profit):
     print(f"WATER: {resources['water']}")
     print(f"MILK: {resources['milk']}")
@@ -9,10 +10,12 @@ def report(profit):
     print(f"COST: ${profit}\n")
 
 
+# refunds the user or change
 def refund(user_amount, coffee_cost):
     return round(user_amount - coffee_cost, 2)
 
 
+# checks if the user paid enough for the drink
 def successful_transaction(user_amount, coffee_cost):
     if user_amount < coffee_cost:
         print(f"SORRY THAT'S NOT ENOUGH MONEY. MONEY REFUNDED: ${user_amount}\n")
@@ -30,11 +33,13 @@ def is_sufficient(coffee_ingredients):
     return False
 
 
+# takes away all the resources used by the user. Depending on the coffee chosen.
 def used_ingredients(coffee_ingredients):
     for ingredient in coffee_ingredients:
         resources[ingredient] -= coffee_ingredients[ingredient]
 
 
+# calculates all the coins together
 def insert_coin(user_amount):
     penny = 0.01
     nickel = 0.05
@@ -62,6 +67,7 @@ def insert_coin(user_amount):
     return round(user_amount, 2)
 
 
+# main coffee maker program
 def coffee_machine():
     # secret words for maintainers to turn off the system
     turn_off = "off"
@@ -81,9 +87,9 @@ def coffee_machine():
     profit = 0.00
 
     while True:
-        print(f"ESPRESSO COSTS: ${espresso_cost}")
-        print(f"LATTE COSTS: ${latte_cost}")
-        print(f"CAPPUCCINO COSTS: ${cappuccino_cost}")
+        print(f"☕ESPRESSO COSTS: ${espresso_cost}")
+        print(f"☕LATTE COSTS: ${latte_cost}")
+        print(f"☕CAPPUCCINO COSTS: ${cappuccino_cost}")
         choice = input("WHAT WOULD YOU LIKE TO DRINK? (ESPRESSO/LATTE/CAPPUCCINO)\n").lower()
 
         # secret commands
