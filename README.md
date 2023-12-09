@@ -119,3 +119,9 @@ Higher Lower
 
 <h3>Day 15</h3>
 Coffee Machine
+
+<h3>Day 16</h3>
+Coffee Machine v2.0
+
+<h3>Day 17</h3>
+Quiz game
