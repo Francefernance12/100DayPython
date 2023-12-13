@@ -125,3 +125,6 @@ Coffee Machine v2.0
 
 <h3>Day 17</h3>
 Quiz game
+
+<h3>Day 18</h3>
+Turtle Graphics
