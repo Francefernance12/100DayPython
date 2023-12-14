@@ -127,4 +127,6 @@ Coffee Machine v2.0
 Quiz game
 
 <h3>Day 18</h3>
-Turtle Graphics
+Turtle Graphics/ Hirst painting
+
+<h3>Day 19</h3>
