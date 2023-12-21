@@ -131,3 +131,6 @@ Turtle Graphics/ Hirst painting
 
 <h3>Day 19</h3>
 
+<h3>Day 20</h3>
+
+<h3>Day 21</h3>
