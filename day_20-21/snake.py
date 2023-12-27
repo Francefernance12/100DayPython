@@ -15,6 +15,7 @@ class Snake:
         self.create_snake()
         self.head = self.segments[0]
 
+    # creates the start position of the snake
     def create_snake(self):
         for position in STARTING_POSITION:
             self.add_body(position)
@@ -27,11 +28,11 @@ class Snake:
         snake.goto(position)
         self.segments.append(snake)
 
-    # adds new segment to the snake
+    # adds new segment to the snake every time it eats food
     def extend(self):
         self.add_body(self.segments[-1].position())
 
-    # controls
+    # moves the snake forward
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
             new_x = self.segments[seg_num - 1].xcor()
@@ -39,6 +40,7 @@ class Snake:
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
 
+    # controls
     def move_north(self):
         if self.head.heading() != DOWN:
             self.head.setheading(UP)

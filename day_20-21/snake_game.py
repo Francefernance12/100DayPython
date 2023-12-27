@@ -9,8 +9,8 @@ screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
 screen.title("Snake Game")
-screen.tracer(0)
-screen.mode("standard")
+screen.tracer(0)  # To control the auto screen update
+screen.mode("standard")  # for X and Y coordinates
 
 # snake
 snake = Snake()
@@ -32,8 +32,8 @@ screen.onkey(fun=snake.move_south, key="Down")
 # snake game
 game_is_on = True
 while game_is_on:
-    screen.update()
-    sleep(0.1)
+    screen.update()    # refreshes the screen to make the changes visible to the user. Smoother animation.
+    sleep(0.1)   # makes the snake move at a reasonable speed
     snake.move()
     # collision with food
     if snake.head.distance(food) < 15:
@@ -51,7 +51,6 @@ while game_is_on:
         if snake.head.distance(segment) < 10:
             game_is_on = False
             scoreboard.game_over()
-
 
 
 # exit
