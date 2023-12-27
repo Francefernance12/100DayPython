@@ -127,10 +127,13 @@ Coffee Machine v2.0
 Quiz game
 
 <h3>Day 18</h3>
-Turtle Graphics/ Hirst painting
+Hirst painting
 
 <h3>Day 19</h3>
+Etch-A-Sketch/ turtle_race
 
-<h3>Day 20</h3>
+<h3>Day 20 & 21</h3>
+Snake Game
 
-<h3>Day 21</h3>
+<h3>Day 22</h3>
+Pong Game
