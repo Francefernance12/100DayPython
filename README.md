@@ -1,18 +1,18 @@
 # 100DayPython
-<h3>until the 100th day, I will be uploading 1 different project.</h3>
+<h3>Until the 100th day, I will be uploading 1 different project.</h3>
  
+<hr />
+
 <h3>Day 1</h3>
- 
+ <h4>Description</h4>
  This is a straightforward generator designed to generate a unique band name. You'll respond to a series of questions, and your answers will amalgamate into a distinctive band name for you.
  
-  Brief summary of my codes:
-1. Welcome the User using print().
-2. I create 2 inputs inside a variable named city and pets_name to get answers of the questions from the User
-3. I print the name of the band by combining city and pets_name using concatenation.
- - Optional: I could've used an F string if I wanted to instead of concatenation.
+<h4>Learned</h4>
 
- <h3>Day 2</h3>
- 
+
+<hr />
+<h3>Day 2</h3>
+  <h4>Description</h4>
  I've developed a tip calculator that not only computes the total bill amount with the tip included but also facilitates the calculation of individual shares for a bill split among multiple people. It's a convenient tool for simplifying the process when dining out with friends.
  
  Brief summary of my codes:
@@ -25,9 +25,9 @@
 7. Finally, I added the print statement to display the total amount of the bill plus tip.
 8. I updated the code, I added an if statement to display only the total amount if 1 person payed but if more than one person payed, it will display the amount of perople paying and the amount they each have to pay.
  
- 
+ <hr />
  <h3>Day 3</h3>
- 
+ <h4>Description</h4>
  This game is an adventure where players advance through the storyline by typing in their actions.
  
   Brief summary of my codes:
@@ -39,9 +39,9 @@
    6. Finally, if the player choose the right door at their last choice, they would win!
 
  
- 
+ <hr />
  <h3>Day 4</h3> 
- 
+ <h4>Description</h4>
 This is a simple game of rock, paper and scissors against the computer. 
  Brief summary of my codes:
 1. To introduce randomness into Python's selection process, I imported the 'random' module.
@@ -58,9 +58,9 @@ This is a simple game of rock, paper and scissors against the computer.
  I experienced some difficulties during this project. let me share:
 - At a certain juncture, when I selected scissors and the computer also chose scissors, Python consistently indicated that the computer had won. Upon investigation, I discovered that in the code block defining the computer's win condition, I had inadvertently utilized the player_choice variable instead of the correct computer_choice variable within the elif statement.
 - While examining the player's win condition code block, I sought to understand why my intentional choice of rock was consistently registering as scissors. It became evident that the issue stemmed from the data type of the player_choice variable, which was initially a string. The problem arose when I attempted to equate this string variable to an integer within my if conditions. Recognizing the incompatibility, I resolved the issue by converting the integer to a string, resulting in the desired functionality.
- 
+ <hr />
  <h3>Day 5</h3>
-
+<h4>Description</h4>
   This project is a random password generator. It will take your inputs which are number of characters you want to put in your password. There are 3 different characters; letters, numbers, and symbols. After taking all the inputs. python will create the password for you.
  
  Brief summary of my codes:
@@ -74,10 +74,13 @@ This is a simple game of rock, paper and scissors against the computer.
  Challenges
  - I had a problem with shuffling the password. 
 
+<hr />
 <h3>Day 6</h3>
+<h4>Description</h4>
+<hr />
 
 <h3>Day 7</h3>
-
+<h4>Description</h4>
 This project is a Hangman Game. This Hangman game is a guessing game where the player guesses a letter to slowly figure out the whole word.
 If the Player guesses the word wrong, the player loses a life.
 If the Player guesses the letter correctly, the letter will fill in the blanks until all the blanks have been filled and the word is fully revealed.
@@ -85,8 +88,9 @@ If the Player guesses the letter correctly, the letter will fill in the blanks u
 Brief summary of my codes:
  - The first
 
-
+<hr />
 <h3>Day 8</h3>
+<h4>Description</h4>
 The project is a Caesar Cipher generator. The Caesar cipher is a basic encryption technique in cryptography where each letter in the plaintext is shifted a certain number of places down or up the alphabet.
 The User need to type in the words they want to encrypt or decrypt.
 Then the User needs to type in the number of shifts to encrypt or decrypt.
@@ -100,40 +104,71 @@ Brief summary of my codes:
  - Created the Caesar function which allows the inputted words to be encoded or decoded.
  - Printed the ASCII art logo for the project. The ASCII art logo is from another python file I created that contains the ASCII art.
 
+<hr />
 <h3>Day 9</h3>
+<h4>Description</h4>
 Blind Auction
 
+<hr />
 <h3>Day 10</h3>
+<h4>Description</h4>
 Calculator
 
+<hr />
 <h3>Day 11</h3>
+<h4>Description</h4>
 BlackJack Game
 
+<hr />
 <h3>Day 12</h3>
+<h4>Description</h4>
 Guessing Number Game
 
+<hr />
 <h3>Day 13</h3>
+<h4>Description</h4>
 
+<hr />
 <h3>Day 14</h3>
+<h4>Description</h4>
 Higher Lower
 
+<hr />
 <h3>Day 15</h3>
+<h4>Description</h4>
 Coffee Machine
 
+<hr />
 <h3>Day 16</h3>
+<h4>Description</h4>
 Coffee Machine v2.0
 
+<hr />
 <h3>Day 17</h3>
+<h4>Description</h4>
 Quiz game
 
+<hr />
 <h3>Day 18</h3>
+<h4>Description</h4>
 Hirst painting
 
+<hr />
 <h3>Day 19</h3>
+<h4>Description</h4>
 Etch-A-Sketch/ turtle_race
 
+<hr />
 <h3>Day 20 & 21</h3>
+<h4>Description</h4>
 Snake Game
 
+<hr />
 <h3>Day 22</h3>
+<h4>Description</h4>
 Pong Game
+
+<hr />
+<h3>Day 23</h3>
+<h4>Description</h4>
+Turtle Crossing Game
