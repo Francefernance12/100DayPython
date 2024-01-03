@@ -32,16 +32,16 @@ while game_is_on:
     screen.update()
     driving_cars.move_car()
     for car in driving_cars.cars:
-        # if turtle makes it to goal
+        # if turters makes it to goal
         if turters.ycor() > 280:
             turters.reset_position()
             scoreboard.increment_score()
             driving_cars.speed_up_car()
-        # car collision with left wall
+        # if car has collision with left wall, it will respawn to another location
         if car.xcor() < -300:
             car.goto(randint(300, 1000), randint(-240, 250))
         # turtle collision with car
-        if turters.distance(car) < 15:
+        if turters.distance(car) < 20:
             scoreboard.game_over()
             game_is_on = False
 
