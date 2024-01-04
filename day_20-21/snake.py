@@ -15,7 +15,7 @@ class Snake:
         self.create_snake()
         self.head = self.segments[0]
 
-    # creates the start position of the snake
+    # creates snake and body
     def create_snake(self):
         for position in STARTING_POSITION:
             self.add_body(position)
@@ -39,6 +39,14 @@ class Snake:
             new_y = self.segments[seg_num - 1].ycor()
             self.segments[seg_num].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
+
+    # The snake will reset
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000, 1000)
+        self.segments.clear()
+        self.create_snake()
+        self.head = self.segments[0]
 
     # controls
     def move_north(self):
