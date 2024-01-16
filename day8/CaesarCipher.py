@@ -1,5 +1,6 @@
 from Caesar_art import logo
 
+# duplicate the alphabet to avoid out of range error
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
             'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
             'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -32,7 +33,7 @@ while in_game:
     text = input("Type your message:\n").lower()
     shift = int(input("Type the shift number:\n"))
 
-    shift = shift % 26  # in case, the shift amount is over the limit of the alphabet list
+    shift = shift % 26  # in case, there is a large shift amount that goes over the limit of the alphabet list
 
     caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
 
