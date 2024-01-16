@@ -65,9 +65,9 @@ in your password. There are 3 different characters; letters, numbers, and symbol
 python will create the password for you.
  
 <h4>What I Learned</h4>
-- Random Module(Choice & Shuffle)
+- Random Module(`Choice` & `Shuffle`)
 - `for` loop
-- `range` Method
+- `range()` Method
 - `join()` Method
 - `list` Method
 
@@ -78,12 +78,15 @@ python will create the password for you.
 
 <h3>Day 7</h3>
 <h4>Hangman Game</h4>
-This project is a Hangman Game. This Hangman game is a guessing game where the player guesses a letter to slowly figure out the whole word.
-If the Player guesses the word wrong, the player loses a life.
-If the Player guesses the letter correctly, the letter will fill in the blanks until all the blanks have been filled and the word is fully revealed.
+This project involves creating a Hangman Game—a guessing game in which players attempt to deduce a word by guessing 
+letters. Incorrect guesses result in a loss of life, while correct guesses fill in the blanks until the entire word is 
+revealed.
 
-Brief summary of my codes:
- - The first
+<h4>What I Learned</h4>
+- From/Import
+- replacing/removing/placing elements in empty lists
+- `lower` method
+
 
 <hr />
 <h3>Day 8</h3>
@@ -93,18 +96,26 @@ The User need to type in the words they want to encrypt or decrypt.
 Then the User needs to type in the number of shifts to encrypt or decrypt.
 After receiving the inputs, python should start displaying the User's encrypted or decrypted words.
 
-Brief summary of my codes:
- - I created an alphabet list
- - I created a while loop that would stop until the User does not want to try again.
- - Inside the while loop, I Created inputs for the user to type in their words, choice and numbers.
- - I calculate the number of shifts divisible to the number of alphabets in the list to handle larger shifts values.
- - Created the Caesar function which allows the inputted words to be encoded or decoded.
- - Printed the ASCII art logo for the project. The ASCII art logo is from another python file I created that contains the ASCII art.
+<h4>What I Learned</h4>
+- Def Functions
+- handling out of range list error
+- Positional/Keyword arguments
+
 
 <hr />
 <h3>Day 9</h3>
 <h4>Blind Auction</h4>
+A Blind Auction is Auction where the bidders cannot know the other bidder's bid.
+The user will enter their names and place their bids.
+The user will be asked if there is another bidder or not.
+If user select `yes`, the screen should clear to hide the previous bid from the next bidder and so on.
+If user select `no`, The bidder with the highest bid will be declared the winner.
 
+<h4>What I Learned</h4>
+- replit module(`clear`)
+- Dictionaries
+- `max()` method
+- `get()` method
 
 <hr />
 <h3>Day 10</h3>
@@ -175,3 +186,15 @@ Brief summary of my codes:
 <hr />
 <h3>Day 25</h3>
 <h4>U.S Guessing Game</h4>
+
+<hr />
+<h3>Day 26</h3>
+<h4>NATO Alphabet</h4>
+
+<hr />
+<h3>Day 27</h3>
+<h4>Converting mile to kilometer</h4>
+
+<hr />
+<h3>Day 28</h3>
+<h4>Pomodoro Break</h4>
