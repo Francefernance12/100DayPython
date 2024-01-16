@@ -26,14 +26,12 @@ while game_is_on:
                                                                                                   "name?").title()
                      .strip())
     print(answer_states)
-    # secret 'Exit' command. Creates save file
+    # secret 'Exit' command. Creates save file in csv
     if answer_states == "Exit":
-        missing_states = []
-        for state in states:
-            if state not in guessed_correctly:
-                missing_states.append(state)
+        missing_states = [state for state in states if state not in guessed_correctly]
         saved_data = pandas.DataFrame(missing_states)
         saved_data.to_csv("states_to_learn.csv")
+        game_is_on = False
     # if user guessed correctly
     if answer_states not in guessed_correctly:
         for state in states:
