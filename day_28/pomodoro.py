@@ -46,6 +46,7 @@ def start_timer():
     elif reps == 8:
         title.config(text="Take a Long Break", font=(FONT_NAME, 40, "bold"), bg=YELLOW, fg=RED)
         count_down(long_break_sec)
+        reset_timer()
 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
