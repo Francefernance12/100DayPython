@@ -4,8 +4,8 @@ import smtplib
 import time
 
 # Data
-MY_LAT = 40.693320  # Your latitude
-MY_LONG = -73.905790  # Your longitude
+MY_LAT = 00.000000  # Your latitude
+MY_LONG = 00.000000  # Your longitude
 EMAIL = 'example01@example.com'
 RECIPIENT = 'example@example.com'
 PASSWORD = 'App Password Here'
