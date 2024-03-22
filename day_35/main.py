@@ -29,8 +29,8 @@ for intervals in weather_data['list']:
         message = client.messages \
             .create(
              body="It's raining. You should take an umbrella",
-             from_='+sender',
-             to='+recipient'
+             from_='+sender phone number',
+             to='+recipient phone number'
             )
 
         print(message.status)
