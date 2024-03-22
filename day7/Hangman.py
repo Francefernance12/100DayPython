@@ -8,7 +8,6 @@ chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
 # number of lives.
-end_of_game = False
 lives = 6
 
 print(logo)
@@ -19,6 +18,7 @@ for _ in range(word_length):
     display += "_"
 
 # entire game loop
+end_of_game = False
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
     if guess in display:
