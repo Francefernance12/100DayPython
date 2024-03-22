@@ -41,7 +41,7 @@ response = requests.post(exercise_api_endpoint, json=json_config, headers=header
 result = response.json()
 print(result)
 
-############################# sheety project ########################################
+############################# sheety ########################################
 # time
 current_date = dt.datetime.now().date()
 formatted_date = current_date.strftime("%m/%d/%Y")
