@@ -13,8 +13,8 @@ weather_parameters = {
     "cnt": 1
 }
 # twilio data
-account_sid = "AC46a31e1675f19d76db98b942f9ca2f8c"
-auth_token = "0892f8215affa8dc65128bfe09552091"
+account_sid = "TWILIO SID HERE"
+auth_token = "AUTHENTICATION TOKEN"
 
 # response
 weather_response = requests.get(url=OWM_ENDPOINT, params=weather_parameters)
