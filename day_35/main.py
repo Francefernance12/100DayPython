@@ -3,7 +3,7 @@ from twilio.rest import Client
 
 # weather api data
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/forecast"
-API_KEY = "41e77fa25ba6d92a74004d92083289fa"
+API_KEY = "WEATHER API KEY HERE"
 latitude = 40.712776
 longitude = -74.005974
 weather_parameters = {
