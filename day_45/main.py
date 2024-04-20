@@ -16,4 +16,3 @@ reversed_movies = movies[::-1]
 with open('top 10 movies of all time.txt', 'w', encoding='utf-8') as movie_list:
     for movie in reversed_movies:
         movie_list.write(f"{movie}\n")
-
