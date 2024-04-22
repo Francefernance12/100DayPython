@@ -1,6 +1,6 @@
 | Days | Name | Description |
 |------|------|-------------|
-| 1    |      |             |
+| 1    |Band Name Generator      |             |
 | 2    |      |             |
 | 3    |      |             |
 | 4    |      |             |
